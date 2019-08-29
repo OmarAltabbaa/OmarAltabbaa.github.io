@@ -1,0 +1,12 @@
+body{
+    border: 2px solid blue;
+    margin: 1em auto;
+    padding: 1em;
+    width: 50em;
+}
+.elvis{
+    color: red;
+}
+h2{
+    color: blue
+}
