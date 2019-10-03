@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 60em;/*=960px~1080px farfölvuskjár*/
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000;
+    color: white;
+    grid-area: auto;
+}
+/* -- GRID AREA  hnit--*/
+
+.haus{
+    grid-area: haus;
+    text-align: center;
+}
+.main{
+    grid-area: container;
+}
+.foot{
+    grid-area: foot;
+}
+.topnav{
+    grid-area: topnav;
+}
+/* dálkar í container*/
+.as1{
+    grid-area: as1;
+    border-right: 1px solid blue;
+    padding-right: 1em;
+}
+.as2{
+    grid-area: as2;
+    border-left: 1px solid blue;
+    padding-left: 1em;
+}
+.art1{
+    grid-area: art1;
+}
+/*--Grid template area*/
+
+.body{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+        "haus"
+        "topnav "
+        "container"
+        "foot"
+}
+/* -- innri tög main--*/
+.main{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+        "art1 art1" 
+        "as1 as2";
+        
+    grid-template-columns: 1fr 1fr;
+}
+/*--flex box--*/
+.topmenu , .footmenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding:1em;
+    background-color: #f00;
+}
+.topmenu li ,.footmenu li{
+    list-style-type: none;
+}
+.virkur {
+    color:red;
+}
+
+
+
+

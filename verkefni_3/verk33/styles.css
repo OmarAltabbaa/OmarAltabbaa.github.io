@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 60em;/*=960px~1080px farfölvuskjár*/
+    background-color: rgb(175, 150, 86);
+    
+}
+/* -- GRID AREA  hnit--*/
+
+.haus{
+    grid-area: haus;
+    text-align: center;
+    background-color: darkgoldenrod;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+.main{
+    grid-area: container;
+    
+    
+}
+.foot{
+    grid-area: foot;
+}
+.topnav{
+    grid-area: topnav;
+}
+/* dálkar í container*/
+.as1{
+    grid-area: as1;
+    border-right: 1px ;
+    padding-right: 1em;
+    background-color: burlywood;
+    
+}
+.as2{
+    grid-area: as2;
+    border-left: 1px ;
+    padding-left: 1em;
+    background-color: rgb(241, 208, 123);
+    
+    
+}
+.art1{
+    grid-area: art1;
+    background-color:burlywood;
+}
+/*--Grid template area*/
+
+.body{
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas:
+        "topnav "
+        "haus"
+        "container"
+        "foot"
+    
+}
+/* -- innri tög main--*/
+.main{
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas:
+        "art1 as2"
+        "as1 as2";
+        
+    grid-template-columns: 3fr 1fr;
+}
+/*--flex box--*/
+.topmenu , .footmenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding:1em;
+    background-color: rgb(161, 103, 27);
+}
+.topmenu li ,.footmenu li{
+    list-style-type: none;
+}
+.virkur {
+    color: khaki;
+}
+
+
+
+

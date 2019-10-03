@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 60em;/*=960px~1080px farfölvuskjár*/
+    background-color: #dd4d21;
+}
+/* -- GRID AREA  hnit--*/
+
+.haus{
+    grid-area: haus;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    background-color: #ff3800;
+}
+.main{
+    grid-area: container;
+}
+.foot{
+    grid-area: foot;
+}
+.topnav{
+    grid-area: topnav;
+}
+/* dálkar í container*/
+.as1{
+    grid-area: as1;
+    border-right: 1px ;
+    padding-right: 1em;
+    font-family: 'Pacifico', cursive;
+    background-color: #f87b05;
+}
+.as2{
+    grid-area: as2;
+    border-left: 1px ;
+    padding-left: 1em;
+    font-family: 'Pacifico', cursive;
+    background-color: #f87b05;
+}
+.art1{
+    grid-area: art1;
+    font-family: 'Pacifico', cursive;
+    background-color: #ff4f00;
+}
+/*--Grid template area*/
+
+.body{
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas:
+        "topnav "
+        "haus"
+        "container"
+        "foot"
+}
+/* -- innri tög main--*/
+.main{
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas: 
+        "art1 as1"
+        "art1 as2";
+    grid-template-columns: 2fr 1fr;
+}
+/*--flex box--*/
+.topmenu , .footmenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding:1em;
+    background-color:#f8e604;
+}
+.topmenu li ,.footmenu li{
+    list-style-type: none;
+}
+.virkur {
+    color:red;
+}
