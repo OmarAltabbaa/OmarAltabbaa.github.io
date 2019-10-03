@@ -4,5 +4,8 @@
 2.[verkefni_2](verkefni_2)
      * [verkefni-23](verkefni_2/verkefni-23)
      * [verkefni-24](verkefni_2/verkefni-24)
-3.[verkefni 3](verkefni-3/)
-
+3.[verkefni3](verkefni3)
+     * [verk31](verk31/verk31)
+     * [verk32](verk32/verk32)
+     * [verk33](verk33/verk33)
+     * [verk34](verk34/verk34)
