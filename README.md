@@ -9,3 +9,4 @@
      * [verk32](verk32/verk32)
      * [verk33](verk33/verk33)
      * [verk34](verk34/verk34)
+ 4.[verkefni 4](verkefni_4)
