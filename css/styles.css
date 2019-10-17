@@ -115,3 +115,7 @@ blockquote{
 .gap-4 {
     grid-gap: 4em
 }
+.copy{
+    text-align: center;
+    color: #fff;
+}
