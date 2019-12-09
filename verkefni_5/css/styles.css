@@ -1,0 +1,154 @@
+* { box-sizing: border-box }
+
+body {
+    background-color: rgb(12, 12, 131);
+    margin: 0; /* tek út sjálgefið 10px margin */
+    /* font-family: ;*/
+    font: 400 1em/1.5 " open sans",sans-serif /* samsett skipun: weight/height, size, family */
+    
+}
+h1 {
+    font-weight: 300;
+    font-size: 2.5em;
+}
+blockquote{
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 1em;
+}
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+
+.container {
+    max-width: 60em; /*960px = fartölvur*/
+    margin: 0 auto; /* top+bottom og left+right */
+    padding: 0;
+}
+.headcolor,.footcolor{
+    color: #fff;
+}
+.bgcolor{
+    background-color: bisque;
+    padding: 1em;
+}
+.topnav a, .footnav a{
+    color: bisque;
+    text-decoration: none;
+}
+.topnav a{
+    padding-left: 2em;
+}
+.topnav a:hover, .footnav a:hover{
+    text-decoration: underline;
+}
+.topnav{
+    margin-top: 3em;
+}
+.footnav {
+    padding:0;
+    
+}
+.footnav li{
+    list-style-type: none;
+    line-height: 2;
+}
+.titil{
+    padding:2em 0 0 0;
+}
+.verkefni{
+    text-align: right;
+}
+.marginb{
+    margin-bottom: -1em;
+}
+.innermenu{
+    display: flex;
+    justify-content: center;
+}
+.innermenu a{
+    color: bisque;
+    background-color: rgb(12, 12, 131);
+    padding:.5em 1em ;
+    margin-top: 1em;
+    text-decoration: none;
+    border-right:1px solid #fff ;
+}
+.innermenu a :last-child{
+    border: 0em;
+}
+.innermenu a:hover, .innermenu a:active{
+    color: rgb(12, 12, 131);
+    background-color: bisque;
+}
+.margint{
+    margin: 4em;
+}
+
+.topbutt{
+    display: block;
+    position: fixed;
+    bottom:2em ;
+    right: 2em;
+    border-radius: 100%;
+    padding-bottom: 0.2em;
+    padding:0em ;
+    border: 2px solid rgb(12, 12, 131);
+    color: rgb(12, 12, 131);
+    font-size: 1.5em;
+    width: 2em;
+    text-align: center;
+    text-decoration: none;
+    background-color: bisque;
+}
+/* grid */
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.gap-4 {
+    grid-gap: 2em
+}
+.copy{
+    text-align: center;
+    color: #fff;
+}
+
+/*********60 em*************/
+@media screen and (min-width: 60em) {
+    /* grid */
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .col-4 {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .gap-4 {
+        grid-gap: 4em
+    }
+    .copy{
+        text-align: center;
+        color: #fff;
+
+    
+    }    
+
+}
